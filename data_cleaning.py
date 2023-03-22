@@ -1,7 +1,8 @@
-"""This function checks if the input is a word or string """
+
 import re
 
-def data_clean(input_data): 
+def data_clean(input_data):
+    """This function checks if the input is a word or string """
     input_data_list = list(input_data)
     pedmas_symbols = ['(', ')', '*', '/', '+', '-' ]
 
@@ -14,6 +15,7 @@ def data_clean(input_data):
 
 
 def clean_numbers(input_data_list):
+    """This function corrects numbers in the input list e.g 3,3 becomes 33"""
     return_list = []
     for element in input_data_list:
         if re.match(r"\d", element):
