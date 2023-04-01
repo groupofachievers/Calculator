@@ -1,4 +1,4 @@
-data = ["2","*", "(", "55", "+", "2",")"]
+data = ["2","*", "(", "55", "+", "/""22",")"] 
 new_data = []
 
 for i in range(len(data)):
@@ -27,12 +27,6 @@ for i in range(len(data)):
         new_data.extend(data[0:i+1])
                 
 print(new_data)
-
-
-
-
-
-
 
 
 
